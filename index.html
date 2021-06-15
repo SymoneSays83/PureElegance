@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pure Elegance</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Pontano+Sans|Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1><span class="large">P</span>ure <span class="large">E</span>legance</h1>
+		<h3>Salon and Spa Experience</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+       		<li><a href="index.html" class="current">Home</a></li>
+       		<li><a href="services/services.html">Services</a></li>
+       		<li><a href="joinus/joinus.html">Join Us</a></li>
+       		<li><a href="aboutus/aboutus.html" class="lastitem"> About Us</a></li>
+    	</ul>
+    </nav>
+	<main>
+		<section>
+			<h2>Your sanctuary for mind and body rejuvenation</h2>
+			<p>At Pure Elegance we'll relax your stress away.</p>
+			<video class="salon" width="480" height="270" controls autoplay muted loop>
+				<source src="media/salon.mp4" type="video/mp4">
+			</video>
+		</section>
+		<ul class="hours">
+			<h3>Hours of Operation</h3>
+			<li>Monday: <span>8AM - 6PM</span></li>
+			<li>Tuesday: <span>8AM - 6PM</span></li>
+			<li>Wednesday: <span>8AM - 5PM</span></li>
+			<li>Thursday: <span>8AM - 6PM</span></li>
+			<li>Friday: <span>8AM - 4PM</span></li>
+			<li>Saturday: <span>10AM - 6PM</span></li>
+			<li>Sunday: <span class="closed">Closed</span></li>
+		
+		</ul>
+	</main>
+	<footer>
+		<p class="f_border">Background photo by Mona Eendra on Unsplash</p>
+		<p>
+			<script>
+				var today = new Date();
+				document.write("Current date: ");
+				document.write(today.toDateString());
+			</script>
+		</p>
+		<p>
+			<script>
+				var today = new Date();
+				document.write("&copy;&nbsp;");
+				document.write(today.getFullYear());
+				document.write(", Pure Elegance, Everywhere, USA");
+			</script>
+		</p>
+	</footer>
+</body>

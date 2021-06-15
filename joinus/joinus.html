@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pure Elegance</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="../styles/joinus.css">
+	<link href="https://fonts.googleapis.com/css?family=Pontano+Sans|Tangerine&display=swap" rel="stylesheet">
+	<script
+		src="http://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+	</script>
+	<script>
+		function validateEmail(){
+			var email = $('#email').val();
+			if(!/\S+@\S+\.\S+/.test(email))
+			{
+				alert(`You have entered an invalid email address: ${email}`);
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1><span class="large">P</span>ure <span class="large">E</span>legance</h1>
+		<h3>Salon and Spa Experience</h3>
+	</header>
+	<nav id="nav_menu">
+    	<ul>
+       		<li><a href="../index.html">Home</a></li>
+       		<li><a href="../services/services.html">Services</a></li>
+       		<li><a href="../joinus/joinus.html" class="current">Join Us</a></li>
+       		<li><a href="../aboutus/aboutus.html"> About Us</a>
+            </li>
+    	</ul>
+    </nav>
+	<main>
+		<h2>Join Us</h2>
+		<section>
+		<p>Please, join us for updates on special events and member exclusive discounts.</p>
+		<form id="email_form" action="subscribe.html" method="post">
+			<label for="firstname">First name:</label>
+			<input type="text" id="firstname" autofocus required><br>
+			<label for="lastname">Last name:</label>
+			<input type="text" id="lastname" required><br>
+			<label for="email">Email:</label>
+			<input type="text" id="email" onblur="validateEmail()" required><br>
+			<label for="submit">&nbsp;</label>
+			<input type="submit" id="submit" value="Subscribe">
+		</form>
+		</section>
+	</main>
+	<footer>
+	<p class="f_border">Background photo by Mona Eendra on Unsplash</p>
+		<p>
+			<script>
+				var today = new Date();
+				document.write("Current date: ");
+				document.write(today.toDateString());
+			</script>
+		</p>
+		<p>
+			<script>
+				var today = new Date();
+				document.write("&copy;&nbsp;");
+				document.write(today.getFullYear());
+				document.write(", Pure Elegance, Everywhere, USA");
+			</script>
+		</p>
+	</footer>
+</body>
